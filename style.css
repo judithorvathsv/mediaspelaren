@@ -1,0 +1,130 @@
+img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 90vh;
+  border: 1px solid rgb(22, 38, 68);
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: rgb(22, 38, 61);
+}
+
+main {
+  display: flex;
+  flex-flow: row;
+  width: 90vh;
+  padding: 2rem;
+  background-color: rgb(22, 38, 61);
+}
+
+section {
+  flex: 1;
+  align-items: center;
+}
+
+#songListSection {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.songItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+#songPictureHolder {
+  width: 90px;
+  height: 90px;
+  align-items: start;
+}
+
+.songTitle > p {
+  margin-left: 2rem;
+  margin-right: 12rem;
+}
+
+.songItem > span {
+  margin-left: auto;
+}
+
+#songPlayerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+#songPictureHolderInPlayer {
+  margin-top: 2rem;
+  padding: 2rem;
+  flex-grow: 0.5;
+}
+
+#songItemInPlayer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 90%;
+}
+
+#songItemInPlayer > .songTitle {
+  align-items: center;
+  text-align: center;
+}
+
+#playingTimeInfo {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 90%;
+}
+
+#songPlayerItem {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#repeat {
+  padding-left: 2rem;
+}
+
+#shuffle {
+  padding-right: 2rem;
+}
+
+#playerButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#playButton {
+  padding: 1rem;
+  font-size: 70px;
+}
+
+p:nth-child(even) {
+  color: #777;
+}
