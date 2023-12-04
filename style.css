@@ -6,13 +6,13 @@ img {
 body {
   background-color: black;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 header {
   display: flex;
   align-items: center;
-  width: 90vh;
+  width: 995px;
   border: 1px solid rgb(22, 38, 68);
   justify-content: space-between;
   padding: 2rem;
@@ -22,14 +22,14 @@ header {
 main {
   display: flex;
   flex-flow: row;
-  width: 90vh;
-  padding: 2rem;
-  background-color: rgb(22, 38, 61);
+  width: 1000px;
+  padding: 0, 2rem 2rem, 2rem;
 }
 
 section {
   flex: 1;
   align-items: center;
+  background-color: rgb(22, 38, 61);
 }
 
 #songListSection {
@@ -127,4 +127,16 @@ section {
 
 p:nth-child(even) {
   color: #777;
+}
+
+@media only screen and (max-width: 768px) {
+  #songListSection {
+    display: none;
+  }
+  #songPlayerSection {
+    max-width: 60%;
+  }
+  header {
+    max-width: 535px;
+  }
 }
