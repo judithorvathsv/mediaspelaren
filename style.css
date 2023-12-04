@@ -4,25 +4,25 @@ img {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(22, 38, 61);
   color: white;
   font-size: 16px;
+  max-width: 60%;
+  border: 1px solid rgb(22, 38, 68);
 }
 
 header {
   display: flex;
+  width: 100%;
   align-items: center;
-  width: 995px;
+  justify-content: space-around;
+  padding: 2rem 2rem 2rem 0;
   border: 1px solid rgb(22, 38, 68);
-  justify-content: space-between;
-  padding: 2rem;
-  background-color: rgb(22, 38, 61);
 }
 
 main {
   display: flex;
   flex-flow: row;
-  width: 1000px;
   padding: 0, 2rem 2rem, 2rem;
 }
 
@@ -30,6 +30,7 @@ section {
   flex: 1;
   align-items: center;
   background-color: rgb(22, 38, 61);
+  border: 2px solid black;
 }
 
 #songListSection {
@@ -48,9 +49,8 @@ section {
 }
 
 #songPictureHolder {
-  width: 90px;
-  height: 90px;
   align-items: start;
+  width: 8rem;
 }
 
 .songTitle > p {
@@ -65,11 +65,14 @@ section {
 #songPlayerSection {
   display: flex;
   flex-direction: column;
+  padding-right: 2rem;
 }
 
 #songPictureHolderInPlayer {
   margin-top: 2rem;
-  padding: 2rem;
+  width: 90%;
+  padding-left: 2rem;
+  /* padding: 2rem 2rem 2rem 4rem; */
   flex-grow: 0.5;
 }
 
@@ -103,7 +106,7 @@ section {
   flex-grow: 1;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 
 #repeat {
@@ -133,10 +136,9 @@ p:nth-child(even) {
   #songListSection {
     display: none;
   }
-  #songPlayerSection {
-    max-width: 60%;
-  }
-  header {
-    max-width: 535px;
+
+  #songItemInPlayer > .songTitle > p {
+    width: 100%;
+    margin-left: -1rem;
   }
 }
