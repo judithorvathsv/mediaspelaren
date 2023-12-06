@@ -24,7 +24,7 @@ header {
   margin-left: 2rem;
 }
 
-.container {
+.sectionContainer {
   display: flex;
   flex-flow: row;
   padding: 0, 2rem 2rem, 2rem;
