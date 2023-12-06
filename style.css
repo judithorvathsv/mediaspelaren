@@ -6,10 +6,7 @@ body {
   background-image: url("assets/cloud.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-main {
-  display: flex;
+    display: flex;
   flex-direction: column;
 }
 
@@ -24,7 +21,7 @@ header {
   margin-left: 2rem;
 }
 
-.sectionContainer {
+main {
   display: flex;
   flex-flow: row;
   padding: 0, 2rem 2rem, 2rem;
