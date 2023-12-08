@@ -6,7 +6,7 @@ body {
   background-image: url("assets/cloud.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-    display: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -103,11 +103,6 @@ img {
   width: 90%;
 }
 
-#timingLine {
-  flex-grow: 1;
-  margin-left: 4rem;
-}
-
 #songPlayerItem {
   display: flex;
   flex-direction: row;
@@ -149,4 +144,22 @@ p:nth-child(even) {
     width: 100%;
     margin-left: -1rem;
   }
+}
+
+#blackLineTime {
+  background-color: black;
+  width: 80%;
+  height: 5px;
+}
+
+#whiteLineTime {
+  background-color: white;
+  width: 20%;
+  height: 5px;
+}
+
+#timeline {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 4rem 0 4rem;
 }
